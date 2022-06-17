@@ -3,9 +3,6 @@ package com.rulhouse.interfacepractice.farmer
 import android.util.Log
 import com.rulhouse.interfacepractice.farmer.animal.Animal
 
-
-
-
 class Farmer {
 
     fun bringWater(destination: String) {

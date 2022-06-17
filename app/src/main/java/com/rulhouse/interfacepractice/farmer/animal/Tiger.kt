@@ -2,7 +2,7 @@ package com.rulhouse.interfacepractice.farmer.animal
 
 import android.util.Log
 
-class Tiger: Mammal() {
+class Tiger: Mammal(), Predator<Mammal> {
     override fun getName(): String? {
         return this.javaClass.simpleName
     }
@@ -13,5 +13,9 @@ class Tiger: Mammal() {
 
     override fun drink() {
         Log.d("Test", "${this.getName()} lower it's head and drink.")
+    }
+
+    override fun hunt(animal: Mammal) {
+        Log.d("Test", "${this.getName()} hunt a $animal.")
     }
 }
